@@ -1,0 +1,1292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.8.10 on win32)" generated="20230508 23:10:14.718" rpa="false" schemaversion="3">
+<suite id="s1" name="After Login Test" source="D:\Downloads\AP4TS - !!!!!NEMAZ!!!!!!\After_Login_Test.robot">
+<test id="s1-t1" name="TC_007-001: After_Login_Test - Create a post" line="9">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230508 23:10:14.867" level="INFO">Opening browser 'chrome' to base url 'https://www.reddit.com/'.</msg>
+<status status="PASS" starttime="20230508 23:10:14.866" endtime="20230508 23:10:20.192"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230508 23:10:20.193" endtime="20230508 23:10:20.326"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://button[normalize-space()='Accept all']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 23:10:20.326" endtime="20230508 23:10:20.384"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://button[normalize-space()='Accept all']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230508 23:10:20.385" level="INFO">Clicking element 'xpath://button[normalize-space()='Accept all']'.</msg>
+<status status="PASS" starttime="20230508 23:10:20.385" endtime="20230508 23:10:20.459"/>
+</kw>
+<kw name="Wait Until Element Is Not Visible" library="SeleniumLibrary">
+<arg>xpath://div[@class='_1DK52RbaamLOWw5UPaht_S _3Ig_EsWWVLquWs2yBBQjec _1acwN_tUhJ8w-n7oCp-Aw3']</arg>
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<status status="PASS" starttime="20230508 23:10:20.459" endtime="20230508 23:10:20.470"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://a[normalize-space()='Log In']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 23:10:20.470" endtime="20230508 23:10:20.498"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://a[normalize-space()='Log In']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230508 23:10:20.499" level="INFO">Clicking element 'xpath://a[normalize-space()='Log In']'.</msg>
+<status status="PASS" starttime="20230508 23:10:20.499" endtime="20230508 23:10:20.634"/>
+</kw>
+<kw name="Select Frame" library="SeleniumLibrary">
+<arg>xpath://iframe[@class='_25r3t_lrPF3M6zD2YkWvZU']</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<msg timestamp="20230508 23:10:20.634" level="INFO">Selecting frame 'xpath://iframe[@class='_25r3t_lrPF3M6zD2YkWvZU']'.</msg>
+<status status="PASS" starttime="20230508 23:10:20.634" endtime="20230508 23:10:21.416"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://h1[normalize-space()='Log In']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 23:10:21.416" endtime="20230508 23:10:21.425"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://input[@id='loginUsername']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 23:10:21.426" endtime="20230508 23:10:21.434"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://input[@id='loginPassword']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 23:10:21.434" endtime="20230508 23:10:21.445"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://input[@id='loginUsername']</arg>
+<arg>DisciplineTotal7010</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230508 23:10:21.445" level="INFO">Typing text 'DisciplineTotal7010' into text field 'xpath://input[@id='loginUsername']'.</msg>
+<status status="PASS" starttime="20230508 23:10:21.445" endtime="20230508 23:10:21.508"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://input[@id='loginPassword']</arg>
+<arg>147test147</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230508 23:10:21.508" level="INFO">Typing text '147test147' into text field 'xpath://input[@id='loginPassword']'.</msg>
+<status status="PASS" starttime="20230508 23:10:21.508" endtime="20230508 23:10:21.571"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://button[normalize-space()='Log In']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230508 23:10:21.572" level="INFO">Clicking element 'xpath://button[normalize-space()='Log In']'.</msg>
+<status status="PASS" starttime="20230508 23:10:21.572" endtime="20230508 23:10:21.647"/>
+</kw>
+<kw name="Unselect Frame" library="SeleniumLibrary">
+<doc>Sets the main frame as the current frame.</doc>
+<status status="PASS" starttime="20230508 23:10:21.647" endtime="20230508 23:10:21.649"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://div[contains(@class,'efdkOLo3oigH_95whTYCp _1zyV-XmoYeSNGWjfZiXbPc')]//img[contains(@alt,'User avatar')]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 23:10:21.649" endtime="20230508 23:10:24.989"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://div[@class='_1zPvgKHteTOub9dKkvrOl4']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 23:10:24.989" endtime="20230508 23:10:25.017"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://a[normalize-space()='Create Post']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 23:10:25.018" endtime="20230508 23:10:25.050"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://a[normalize-space()='Create Post']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230508 23:10:25.050" level="INFO">Clicking element 'xpath://a[normalize-space()='Create Post']'.</msg>
+<status status="PASS" starttime="20230508 23:10:25.050" endtime="20230508 23:10:25.142"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://div[@class='_3M6BmdyQcCEQZu-MylN14']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 23:10:25.142" endtime="20230508 23:10:25.363"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://textarea[@placeholder='Title']</arg>
+<arg>test</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230508 23:10:25.364" level="INFO">Typing text 'test' into text field 'xpath://textarea[@placeholder='Title']'.</msg>
+<status status="PASS" starttime="20230508 23:10:25.364" endtime="20230508 23:10:25.459"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://div[@role='textbox']</arg>
+<arg>1test1</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230508 23:10:25.460" level="INFO">Typing text '1test1' into text field 'xpath://div[@role='textbox']'.</msg>
+<status status="PASS" starttime="20230508 23:10:25.459" endtime="20230508 23:10:25.648"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>test</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 23:10:25.649" endtime="20230508 23:10:25.665"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>test1</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 23:10:25.665" endtime="20230508 23:10:25.679"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230508 23:10:25.795" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230508 23:10:25.679" endtime="20230508 23:10:25.795"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230508 23:10:25.796" endtime="20230508 23:10:27.958"/>
+</kw>
+<doc>Tests creating a post functionality after login</doc>
+<status status="PASS" starttime="20230508 23:10:14.866" endtime="20230508 23:10:27.959"/>
+</test>
+<test id="s1-t2" name="TC_007-002: After_Login_Test - Notifications" line="38">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230508 23:10:27.960" level="INFO">Opening browser 'chrome' to base url 'https://www.reddit.com/'.</msg>
+<status status="PASS" starttime="20230508 23:10:27.960" endtime="20230508 23:10:33.479"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230508 23:10:33.479" endtime="20230508 23:10:33.634"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://button[normalize-space()='Accept all']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 23:10:33.635" endtime="20230508 23:10:33.685"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://button[normalize-space()='Accept all']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230508 23:10:33.686" level="INFO">Clicking element 'xpath://button[normalize-space()='Accept all']'.</msg>
+<status status="PASS" starttime="20230508 23:10:33.685" endtime="20230508 23:10:33.747"/>
+</kw>
+<kw name="Wait Until Element Is Not Visible" library="SeleniumLibrary">
+<arg>xpath://div[@class='_1DK52RbaamLOWw5UPaht_S _3Ig_EsWWVLquWs2yBBQjec _1acwN_tUhJ8w-n7oCp-Aw3']</arg>
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<status status="PASS" starttime="20230508 23:10:33.747" endtime="20230508 23:10:33.760"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://a[normalize-space()='Log In']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 23:10:33.760" endtime="20230508 23:10:33.769"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://a[normalize-space()='Log In']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230508 23:10:33.770" level="INFO">Clicking element 'xpath://a[normalize-space()='Log In']'.</msg>
+<status status="PASS" starttime="20230508 23:10:33.770" endtime="20230508 23:10:33.900"/>
+</kw>
+<kw name="Select Frame" library="SeleniumLibrary">
+<arg>xpath://iframe[@class='_25r3t_lrPF3M6zD2YkWvZU']</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<msg timestamp="20230508 23:10:33.901" level="INFO">Selecting frame 'xpath://iframe[@class='_25r3t_lrPF3M6zD2YkWvZU']'.</msg>
+<status status="PASS" starttime="20230508 23:10:33.900" endtime="20230508 23:10:34.950"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://h1[normalize-space()='Log In']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 23:10:34.950" endtime="20230508 23:10:34.960"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://input[@id='loginUsername']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 23:10:34.960" endtime="20230508 23:10:34.970"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://input[@id='loginPassword']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 23:10:34.970" endtime="20230508 23:10:34.980"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://input[@id='loginUsername']</arg>
+<arg>DisciplineTotal7010</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230508 23:10:34.980" level="INFO">Typing text 'DisciplineTotal7010' into text field 'xpath://input[@id='loginUsername']'.</msg>
+<status status="PASS" starttime="20230508 23:10:34.980" endtime="20230508 23:10:35.041"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://input[@id='loginPassword']</arg>
+<arg>147test147</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230508 23:10:35.042" level="INFO">Typing text '147test147' into text field 'xpath://input[@id='loginPassword']'.</msg>
+<status status="PASS" starttime="20230508 23:10:35.042" endtime="20230508 23:10:35.132"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://button[normalize-space()='Log In']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230508 23:10:35.132" level="INFO">Clicking element 'xpath://button[normalize-space()='Log In']'.</msg>
+<status status="PASS" starttime="20230508 23:10:35.132" endtime="20230508 23:10:35.208"/>
+</kw>
+<kw name="Unselect Frame" library="SeleniumLibrary">
+<doc>Sets the main frame as the current frame.</doc>
+<status status="PASS" starttime="20230508 23:10:35.208" endtime="20230508 23:10:35.210"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://div[contains(@class,'efdkOLo3oigH_95whTYCp _1zyV-XmoYeSNGWjfZiXbPc')]//img[contains(@alt,'User avatar')]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 23:10:35.210" endtime="20230508 23:10:41.235"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://div[@class='_1zPvgKHteTOub9dKkvrOl4']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 23:10:41.235" endtime="20230508 23:10:41.352"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://i[@class='_3uVYL9qgX3QSEa_F4F-DPv icon icon-notification']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 23:10:41.352" endtime="20230508 23:10:41.402"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://i[@class='_3uVYL9qgX3QSEa_F4F-DPv icon icon-notification']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230508 23:10:41.403" level="INFO">Clicking element 'xpath://i[@class='_3uVYL9qgX3QSEa_F4F-DPv icon icon-notification']'.</msg>
+<status status="PASS" starttime="20230508 23:10:41.402" endtime="20230508 23:10:41.497"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://span[@class='wdFbe8PT7DInxaiHo2Me1']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 23:10:41.497" endtime="20230508 23:10:41.717"/>
+</kw>
+<kw name="Wait Until Element Is Not Visible" library="SeleniumLibrary">
+<arg>xpath://div[@class='_1DK52RbaamLOWw5UPaht_S _3Ig_EsWWVLquWs2yBBQjec _1acwN_tUhJ8w-n7oCp-Aw3']</arg>
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<status status="PASS" starttime="20230508 23:10:41.717" endtime="20230508 23:10:41.725"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://i[@class='_3pDOQfbIbQuT4PBwPGp85E icon icon-settings']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 23:10:41.725" endtime="20230508 23:10:41.733"/>
+</kw>
+<kw name="Wait Until Element Is Not Visible" library="SeleniumLibrary">
+<arg>xpath://div[@class='_1DK52RbaamLOWw5UPaht_S _3Ig_EsWWVLquWs2yBBQjec _1acwN_tUhJ8w-n7oCp-Aw3']</arg>
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<status status="PASS" starttime="20230508 23:10:41.734" endtime="20230508 23:10:41.743"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://i[@class='_3pDOQfbIbQuT4PBwPGp85E icon icon-settings']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230508 23:10:41.744" level="INFO">Clicking element 'xpath://i[@class='_3pDOQfbIbQuT4PBwPGp85E icon icon-settings']'.</msg>
+<status status="PASS" starttime="20230508 23:10:41.743" endtime="20230508 23:10:41.858"/>
+</kw>
+<kw name="Location Should Be" library="SeleniumLibrary">
+<arg>https://www.reddit.com/settings/notifications</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<msg timestamp="20230508 23:10:41.862" level="INFO">Current location is 'https://www.reddit.com/settings/notifications'.</msg>
+<status status="PASS" starttime="20230508 23:10:41.858" endtime="20230508 23:10:41.862"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://h3[normalize-space()='User settings']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 23:10:41.863" endtime="20230508 23:10:42.089"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230508 23:10:42.218" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230508 23:10:42.090" endtime="20230508 23:10:42.218"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230508 23:10:42.218" endtime="20230508 23:10:44.408"/>
+</kw>
+<doc>Tests Notifications functionality after login</doc>
+<status status="PASS" starttime="20230508 23:10:27.960" endtime="20230508 23:10:44.408"/>
+</test>
+<test id="s1-t3" name="TC_007-003: After_Login_Test - Profile" line="69">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230508 23:10:44.409" level="INFO">Opening browser 'chrome' to base url 'https://www.reddit.com/'.</msg>
+<status status="PASS" starttime="20230508 23:10:44.409" endtime="20230508 23:10:49.842"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230508 23:10:49.843" endtime="20230508 23:10:49.979"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://button[normalize-space()='Accept all']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 23:10:49.979" endtime="20230508 23:10:50.028"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://button[normalize-space()='Accept all']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230508 23:10:50.028" level="INFO">Clicking element 'xpath://button[normalize-space()='Accept all']'.</msg>
+<status status="PASS" starttime="20230508 23:10:50.028" endtime="20230508 23:10:50.123"/>
+</kw>
+<kw name="Wait Until Element Is Not Visible" library="SeleniumLibrary">
+<arg>xpath://div[@class='_1DK52RbaamLOWw5UPaht_S _3Ig_EsWWVLquWs2yBBQjec _1acwN_tUhJ8w-n7oCp-Aw3']</arg>
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<status status="PASS" starttime="20230508 23:10:50.123" endtime="20230508 23:10:50.148"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://a[normalize-space()='Log In']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 23:10:50.149" endtime="20230508 23:10:50.203"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://a[normalize-space()='Log In']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230508 23:10:50.204" level="INFO">Clicking element 'xpath://a[normalize-space()='Log In']'.</msg>
+<status status="PASS" starttime="20230508 23:10:50.204" endtime="20230508 23:10:50.289"/>
+</kw>
+<kw name="Select Frame" library="SeleniumLibrary">
+<arg>xpath://iframe[@class='_25r3t_lrPF3M6zD2YkWvZU']</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<msg timestamp="20230508 23:10:50.290" level="INFO">Selecting frame 'xpath://iframe[@class='_25r3t_lrPF3M6zD2YkWvZU']'.</msg>
+<status status="PASS" starttime="20230508 23:10:50.290" endtime="20230508 23:10:51.217"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://h1[normalize-space()='Log In']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 23:10:51.217" endtime="20230508 23:10:51.225"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://input[@id='loginUsername']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 23:10:51.226" endtime="20230508 23:10:51.235"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://input[@id='loginPassword']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 23:10:51.236" endtime="20230508 23:10:51.245"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://input[@id='loginUsername']</arg>
+<arg>DisciplineTotal7010</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230508 23:10:51.247" level="INFO">Typing text 'DisciplineTotal7010' into text field 'xpath://input[@id='loginUsername']'.</msg>
+<status status="PASS" starttime="20230508 23:10:51.246" endtime="20230508 23:10:51.334"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://input[@id='loginPassword']</arg>
+<arg>147test147</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230508 23:10:51.334" level="INFO">Typing text '147test147' into text field 'xpath://input[@id='loginPassword']'.</msg>
+<status status="PASS" starttime="20230508 23:10:51.334" endtime="20230508 23:10:51.397"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://button[normalize-space()='Log In']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230508 23:10:51.399" level="INFO">Clicking element 'xpath://button[normalize-space()='Log In']'.</msg>
+<status status="PASS" starttime="20230508 23:10:51.399" endtime="20230508 23:10:51.506"/>
+</kw>
+<kw name="Unselect Frame" library="SeleniumLibrary">
+<doc>Sets the main frame as the current frame.</doc>
+<status status="PASS" starttime="20230508 23:10:51.507" endtime="20230508 23:10:51.509"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://div[contains(@class,'efdkOLo3oigH_95whTYCp _1zyV-XmoYeSNGWjfZiXbPc')]//img[contains(@alt,'User avatar')]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 23:10:51.510" endtime="20230508 23:10:55.638"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://div[@class='_1zPvgKHteTOub9dKkvrOl4']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 23:10:55.639" endtime="20230508 23:10:55.660"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://button[@id='USER_DROPDOWN_ID']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 23:10:55.662" endtime="20230508 23:10:55.671"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://button[@id='USER_DROPDOWN_ID']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230508 23:10:55.672" level="INFO">Clicking element 'xpath://button[@id='USER_DROPDOWN_ID']'.</msg>
+<status status="PASS" starttime="20230508 23:10:55.672" endtime="20230508 23:10:55.776"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://div[@class='_3SDj_IT6ZaqCbKfC4eTjb2']//a[1]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 23:10:55.776" endtime="20230508 23:10:55.786"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://div[@class='_3SDj_IT6ZaqCbKfC4eTjb2']//a[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230508 23:10:55.786" level="INFO">Clicking element 'xpath://div[@class='_3SDj_IT6ZaqCbKfC4eTjb2']//a[1]'.</msg>
+<status status="PASS" starttime="20230508 23:10:55.786" endtime="20230508 23:10:55.914"/>
+</kw>
+<kw name="Location Should Be" library="SeleniumLibrary">
+<arg>https://www.reddit.com/user/DisciplineTotal7010</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<msg timestamp="20230508 23:10:55.918" level="INFO">Current location is 'https://www.reddit.com/user/DisciplineTotal7010'.</msg>
+<status status="PASS" starttime="20230508 23:10:55.914" endtime="20230508 23:10:55.918"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://h1[@class='_3LM4tRaExed4x1wBfK1pmg']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 23:10:55.918" endtime="20230508 23:10:56.136"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://a[normalize-space()='Posts']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 23:10:56.136" endtime="20230508 23:10:56.147"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://a[normalize-space()='Posts']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230508 23:10:56.147" level="INFO">Clicking element 'xpath://a[normalize-space()='Posts']'.</msg>
+<status status="PASS" starttime="20230508 23:10:56.147" endtime="20230508 23:10:56.204"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://div[@class='_2nAClDbEIBvjhmrBuWTQ4V']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 23:10:56.204" endtime="20230508 23:10:56.864"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230508 23:10:56.987" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230508 23:10:56.865" endtime="20230508 23:10:56.987"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230508 23:10:56.987" endtime="20230508 23:10:59.149"/>
+</kw>
+<doc>Tests Profile functionality after login</doc>
+<status status="PASS" starttime="20230508 23:10:44.409" endtime="20230508 23:10:59.149"/>
+</test>
+<test id="s1-t4" name="TC_007-004: After_Login_Test - User Settings" line="100">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230508 23:10:59.151" level="INFO">Opening browser 'chrome' to base url 'https://www.reddit.com/'.</msg>
+<status status="PASS" starttime="20230508 23:10:59.150" endtime="20230508 23:11:04.290"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230508 23:11:04.291" endtime="20230508 23:11:04.430"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://button[normalize-space()='Accept all']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 23:11:04.430" endtime="20230508 23:11:04.475"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://button[normalize-space()='Accept all']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230508 23:11:04.476" level="INFO">Clicking element 'xpath://button[normalize-space()='Accept all']'.</msg>
+<status status="PASS" starttime="20230508 23:11:04.475" endtime="20230508 23:11:04.536"/>
+</kw>
+<kw name="Wait Until Element Is Not Visible" library="SeleniumLibrary">
+<arg>xpath://div[@class='_1DK52RbaamLOWw5UPaht_S _3Ig_EsWWVLquWs2yBBQjec _1acwN_tUhJ8w-n7oCp-Aw3']</arg>
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<status status="PASS" starttime="20230508 23:11:04.536" endtime="20230508 23:11:04.548"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://a[normalize-space()='Log In']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 23:11:04.548" endtime="20230508 23:11:04.558"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://a[normalize-space()='Log In']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230508 23:11:04.558" level="INFO">Clicking element 'xpath://a[normalize-space()='Log In']'.</msg>
+<status status="PASS" starttime="20230508 23:11:04.558" endtime="20230508 23:11:04.687"/>
+</kw>
+<kw name="Select Frame" library="SeleniumLibrary">
+<arg>xpath://iframe[@class='_25r3t_lrPF3M6zD2YkWvZU']</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<msg timestamp="20230508 23:11:04.688" level="INFO">Selecting frame 'xpath://iframe[@class='_25r3t_lrPF3M6zD2YkWvZU']'.</msg>
+<status status="PASS" starttime="20230508 23:11:04.688" endtime="20230508 23:11:05.429"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://h1[normalize-space()='Log In']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 23:11:05.430" endtime="20230508 23:11:05.439"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://input[@id='loginUsername']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 23:11:05.439" endtime="20230508 23:11:05.449"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://input[@id='loginPassword']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 23:11:05.449" endtime="20230508 23:11:05.458"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://input[@id='loginUsername']</arg>
+<arg>DisciplineTotal7010</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230508 23:11:05.459" level="INFO">Typing text 'DisciplineTotal7010' into text field 'xpath://input[@id='loginUsername']'.</msg>
+<status status="PASS" starttime="20230508 23:11:05.459" endtime="20230508 23:11:05.521"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://input[@id='loginPassword']</arg>
+<arg>147test147</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230508 23:11:05.522" level="INFO">Typing text '147test147' into text field 'xpath://input[@id='loginPassword']'.</msg>
+<status status="PASS" starttime="20230508 23:11:05.522" endtime="20230508 23:11:05.581"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://button[normalize-space()='Log In']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230508 23:11:05.582" level="INFO">Clicking element 'xpath://button[normalize-space()='Log In']'.</msg>
+<status status="PASS" starttime="20230508 23:11:05.582" endtime="20230508 23:11:05.660"/>
+</kw>
+<kw name="Unselect Frame" library="SeleniumLibrary">
+<doc>Sets the main frame as the current frame.</doc>
+<status status="PASS" starttime="20230508 23:11:05.660" endtime="20230508 23:11:05.662"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://div[contains(@class,'efdkOLo3oigH_95whTYCp _1zyV-XmoYeSNGWjfZiXbPc')]//img[contains(@alt,'User avatar')]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 23:11:05.663" endtime="20230508 23:11:08.717"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://div[@class='_1zPvgKHteTOub9dKkvrOl4']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 23:11:08.719" endtime="20230508 23:11:09.022"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://button[@id='USER_DROPDOWN_ID']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 23:11:09.023" endtime="20230508 23:11:09.109"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://button[@id='USER_DROPDOWN_ID']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230508 23:11:09.109" level="INFO">Clicking element 'xpath://button[@id='USER_DROPDOWN_ID']'.</msg>
+<status status="PASS" starttime="20230508 23:11:09.109" endtime="20230508 23:11:09.209"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://span[normalize-space()='User Settings']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 23:11:09.209" endtime="20230508 23:11:09.220"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://span[normalize-space()='User Settings']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230508 23:11:09.221" level="INFO">Clicking element 'xpath://span[normalize-space()='User Settings']'.</msg>
+<status status="PASS" starttime="20230508 23:11:09.220" endtime="20230508 23:11:09.280"/>
+</kw>
+<kw name="Location Should Be" library="SeleniumLibrary">
+<arg>https://www.reddit.com/settings</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<msg timestamp="20230508 23:11:09.285" level="INFO">Current location is 'https://www.reddit.com/settings'.</msg>
+<status status="PASS" starttime="20230508 23:11:09.280" endtime="20230508 23:11:09.285"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://h2[normalize-space()='Account settings']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 23:11:09.285" endtime="20230508 23:11:09.511"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://a[normalize-space()='Profile']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 23:11:09.512" endtime="20230508 23:11:09.520"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://a[normalize-space()='Profile']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230508 23:11:09.522" level="INFO">Clicking element 'xpath://a[normalize-space()='Profile']'.</msg>
+<status status="PASS" starttime="20230508 23:11:09.520" endtime="20230508 23:11:09.575"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://h2[normalize-space()='Customize profile']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 23:11:09.576" endtime="20230508 23:11:10.240"/>
+</kw>
+<kw name="Location Should Be" library="SeleniumLibrary">
+<arg>https://www.reddit.com/settings/profile</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<msg timestamp="20230508 23:11:10.244" level="INFO">Current location is 'https://www.reddit.com/settings/profile'.</msg>
+<status status="PASS" starttime="20230508 23:11:10.240" endtime="20230508 23:11:10.244"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230508 23:11:10.395" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230508 23:11:10.244" endtime="20230508 23:11:10.395"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230508 23:11:10.396" endtime="20230508 23:11:12.547"/>
+</kw>
+<doc>Tests User Settings functionality after login</doc>
+<status status="PASS" starttime="20230508 23:10:59.150" endtime="20230508 23:11:12.547"/>
+</test>
+<test id="s1-t5" name="TC_007-005: After_Login_Test - DarkMode" line="132">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230508 23:11:12.548" level="INFO">Opening browser 'chrome' to base url 'https://www.reddit.com/'.</msg>
+<status status="PASS" starttime="20230508 23:11:12.548" endtime="20230508 23:11:17.801"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230508 23:11:17.802" endtime="20230508 23:11:17.952"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://button[normalize-space()='Accept all']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 23:11:17.952" endtime="20230508 23:11:17.987"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://button[normalize-space()='Accept all']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230508 23:11:17.987" level="INFO">Clicking element 'xpath://button[normalize-space()='Accept all']'.</msg>
+<status status="PASS" starttime="20230508 23:11:17.987" endtime="20230508 23:11:18.100"/>
+</kw>
+<kw name="Wait Until Element Is Not Visible" library="SeleniumLibrary">
+<arg>xpath://div[@class='_1DK52RbaamLOWw5UPaht_S _3Ig_EsWWVLquWs2yBBQjec _1acwN_tUhJ8w-n7oCp-Aw3']</arg>
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<status status="PASS" starttime="20230508 23:11:18.100" endtime="20230508 23:11:18.146"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://a[normalize-space()='Log In']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 23:11:18.146" endtime="20230508 23:11:18.167"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://a[normalize-space()='Log In']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230508 23:11:18.168" level="INFO">Clicking element 'xpath://a[normalize-space()='Log In']'.</msg>
+<status status="PASS" starttime="20230508 23:11:18.167" endtime="20230508 23:11:18.238"/>
+</kw>
+<kw name="Select Frame" library="SeleniumLibrary">
+<arg>xpath://iframe[@class='_25r3t_lrPF3M6zD2YkWvZU']</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<msg timestamp="20230508 23:11:18.239" level="INFO">Selecting frame 'xpath://iframe[@class='_25r3t_lrPF3M6zD2YkWvZU']'.</msg>
+<status status="PASS" starttime="20230508 23:11:18.238" endtime="20230508 23:11:19.022"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://h1[normalize-space()='Log In']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 23:11:19.022" endtime="20230508 23:11:19.032"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://input[@id='loginUsername']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 23:11:19.032" endtime="20230508 23:11:19.052"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://input[@id='loginPassword']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 23:11:19.053" endtime="20230508 23:11:19.060"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://input[@id='loginUsername']</arg>
+<arg>DisciplineTotal7010</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230508 23:11:19.062" level="INFO">Typing text 'DisciplineTotal7010' into text field 'xpath://input[@id='loginUsername']'.</msg>
+<status status="PASS" starttime="20230508 23:11:19.060" endtime="20230508 23:11:19.122"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://input[@id='loginPassword']</arg>
+<arg>147test147</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230508 23:11:19.122" level="INFO">Typing text '147test147' into text field 'xpath://input[@id='loginPassword']'.</msg>
+<status status="PASS" starttime="20230508 23:11:19.122" endtime="20230508 23:11:19.181"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://button[normalize-space()='Log In']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230508 23:11:19.181" level="INFO">Clicking element 'xpath://button[normalize-space()='Log In']'.</msg>
+<status status="PASS" starttime="20230508 23:11:19.181" endtime="20230508 23:11:19.265"/>
+</kw>
+<kw name="Unselect Frame" library="SeleniumLibrary">
+<doc>Sets the main frame as the current frame.</doc>
+<status status="PASS" starttime="20230508 23:11:19.265" endtime="20230508 23:11:19.267"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://div[contains(@class,'efdkOLo3oigH_95whTYCp _1zyV-XmoYeSNGWjfZiXbPc')]//img[contains(@alt,'User avatar')]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 23:11:19.267" endtime="20230508 23:11:22.647"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://div[@class='_1zPvgKHteTOub9dKkvrOl4']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 23:11:22.647" endtime="20230508 23:11:22.745"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://button[@id='USER_DROPDOWN_ID']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 23:11:22.745" endtime="20230508 23:11:22.788"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://button[@id='USER_DROPDOWN_ID']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230508 23:11:22.788" level="INFO">Clicking element 'xpath://button[@id='USER_DROPDOWN_ID']'.</msg>
+<status status="PASS" starttime="20230508 23:11:22.788" endtime="20230508 23:11:22.866"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://span[normalize-space()='Dark Mode']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 23:11:22.866" endtime="20230508 23:11:22.879"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://span[normalize-space()='Dark Mode']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230508 23:11:22.879" level="INFO">Clicking element 'xpath://span[normalize-space()='Dark Mode']'.</msg>
+<status status="PASS" starttime="20230508 23:11:22.879" endtime="20230508 23:11:22.916"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath://button[@class='_2e2g485kpErHhJQUiyvvC2 _1asGWL2_XadHoBuUlNArOq _3kUvbpMbR21zJBboDdBH7D']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230508 23:11:22.916" endtime="20230508 23:11:22.997"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://span[normalize-space()='Dark Mode']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 23:11:22.997" endtime="20230508 23:11:23.004"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://span[normalize-space()='Dark Mode']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230508 23:11:23.004" level="INFO">Clicking element 'xpath://span[normalize-space()='Dark Mode']'.</msg>
+<status status="PASS" starttime="20230508 23:11:23.004" endtime="20230508 23:11:23.036"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath:(//button[@role='switch'])[2]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230508 23:11:23.037" endtime="20230508 23:11:23.059"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230508 23:11:23.059" endtime="20230508 23:11:25.216"/>
+</kw>
+<doc>Tests DarkMode functionality after login</doc>
+<status status="PASS" starttime="20230508 23:11:12.548" endtime="20230508 23:11:25.216"/>
+</test>
+<test id="s1-t6" name="TC_007-006: After_Login_Test - Selecting Post" line="161">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230508 23:11:25.218" level="INFO">Opening browser 'chrome' to base url 'https://www.reddit.com/'.</msg>
+<status status="PASS" starttime="20230508 23:11:25.218" endtime="20230508 23:11:30.441"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230508 23:11:30.441" endtime="20230508 23:11:30.566"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://button[normalize-space()='Accept all']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 23:11:30.566" endtime="20230508 23:11:30.614"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://button[normalize-space()='Accept all']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230508 23:11:30.614" level="INFO">Clicking element 'xpath://button[normalize-space()='Accept all']'.</msg>
+<status status="PASS" starttime="20230508 23:11:30.614" endtime="20230508 23:11:30.683"/>
+</kw>
+<kw name="Wait Until Element Is Not Visible" library="SeleniumLibrary">
+<arg>xpath://div[@class='_1DK52RbaamLOWw5UPaht_S _3Ig_EsWWVLquWs2yBBQjec _1acwN_tUhJ8w-n7oCp-Aw3']</arg>
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<status status="PASS" starttime="20230508 23:11:30.683" endtime="20230508 23:11:30.693"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://a[normalize-space()='Log In']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 23:11:30.694" endtime="20230508 23:11:30.719"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://a[normalize-space()='Log In']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230508 23:11:30.720" level="INFO">Clicking element 'xpath://a[normalize-space()='Log In']'.</msg>
+<status status="PASS" starttime="20230508 23:11:30.720" endtime="20230508 23:11:30.837"/>
+</kw>
+<kw name="Select Frame" library="SeleniumLibrary">
+<arg>xpath://iframe[@class='_25r3t_lrPF3M6zD2YkWvZU']</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<msg timestamp="20230508 23:11:30.838" level="INFO">Selecting frame 'xpath://iframe[@class='_25r3t_lrPF3M6zD2YkWvZU']'.</msg>
+<status status="PASS" starttime="20230508 23:11:30.837" endtime="20230508 23:11:31.499"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://h1[normalize-space()='Log In']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 23:11:31.499" endtime="20230508 23:11:31.507"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://input[@id='loginUsername']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 23:11:31.509" endtime="20230508 23:11:31.518"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://input[@id='loginPassword']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 23:11:31.518" endtime="20230508 23:11:31.529"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://input[@id='loginUsername']</arg>
+<arg>DisciplineTotal7010</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230508 23:11:31.530" level="INFO">Typing text 'DisciplineTotal7010' into text field 'xpath://input[@id='loginUsername']'.</msg>
+<status status="PASS" starttime="20230508 23:11:31.530" endtime="20230508 23:11:31.609"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://input[@id='loginPassword']</arg>
+<arg>147test147</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230508 23:11:31.609" level="INFO">Typing text '147test147' into text field 'xpath://input[@id='loginPassword']'.</msg>
+<status status="PASS" starttime="20230508 23:11:31.609" endtime="20230508 23:11:31.669"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://button[normalize-space()='Log In']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230508 23:11:31.670" level="INFO">Clicking element 'xpath://button[normalize-space()='Log In']'.</msg>
+<status status="PASS" starttime="20230508 23:11:31.670" endtime="20230508 23:11:31.745"/>
+</kw>
+<kw name="Unselect Frame" library="SeleniumLibrary">
+<doc>Sets the main frame as the current frame.</doc>
+<status status="PASS" starttime="20230508 23:11:31.746" endtime="20230508 23:11:31.747"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://div[contains(@class,'efdkOLo3oigH_95whTYCp _1zyV-XmoYeSNGWjfZiXbPc')]//img[contains(@alt,'User avatar')]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 23:11:31.749" endtime="20230508 23:11:35.293"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://div[@class='_1zPvgKHteTOub9dKkvrOl4']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 23:11:35.294" endtime="20230508 23:11:35.490"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://a[@id='focus-Popular']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 23:11:35.491" endtime="20230508 23:11:35.515"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://a[@id='focus-Popular']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230508 23:11:35.516" level="INFO">Clicking element 'xpath://a[@id='focus-Popular']'.</msg>
+<status status="PASS" starttime="20230508 23:11:35.516" endtime="20230508 23:11:35.609"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://div[contains(@class,'_2pUO1Sfe7WlIHvq6goN3Pz')]//a[3]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 23:11:35.609" endtime="20230508 23:11:35.839"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://div[contains(@class,'_2pUO1Sfe7WlIHvq6goN3Pz')]//a[3]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230508 23:11:35.840" level="INFO">Clicking element 'xpath://div[contains(@class,'_2pUO1Sfe7WlIHvq6goN3Pz')]//a[3]'.</msg>
+<status status="PASS" starttime="20230508 23:11:35.840" endtime="20230508 23:11:35.899"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://h3[normalize-space()='Best. Country. In the world.']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 23:11:35.900" endtime="20230508 23:11:37.432"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://h3[normalize-space()='Best. Country. In the world.']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230508 23:11:37.432" level="INFO">Clicking element 'xpath://h3[normalize-space()='Best. Country. In the world.']'.</msg>
+<status status="PASS" starttime="20230508 23:11:37.432" endtime="20230508 23:11:37.577"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://div[contains(@class,'_2SdHzo12ISmrC8H86TgSCp _29WrubtjAcKqzJSPdQqQ4h')]//h1[@class='_eYtD2XCVieq6emjKBH3m'][normalize-space()='Best. Country. In the world.']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 23:11:37.577" endtime="20230508 23:11:37.791"/>
+</kw>
+<kw name="Location Should Be" library="SeleniumLibrary">
+<arg>https://www.reddit.com/r/WhitePeopleTwitter/comments/13b5ka2/best_country_in_the_world/</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<msg timestamp="20230508 23:11:37.849" level="INFO">Current location is 'https://www.reddit.com/r/WhitePeopleTwitter/comments/13b5ka2/best_country_in_the_world/'.</msg>
+<status status="PASS" starttime="20230508 23:11:37.791" endtime="20230508 23:11:37.849"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230508 23:11:38.130" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230508 23:11:37.850" endtime="20230508 23:11:38.130"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230508 23:11:38.130" endtime="20230508 23:11:40.298"/>
+</kw>
+<doc>Tests Selecting Post functionality after login</doc>
+<status status="PASS" starttime="20230508 23:11:25.217" endtime="20230508 23:11:40.298"/>
+</test>
+<test id="s1-t7" name="TC_007-007: After_Login_Test - Post Notifications" line="191">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230508 23:11:40.300" level="INFO">Opening browser 'chrome' to base url 'https://www.reddit.com/'.</msg>
+<status status="PASS" starttime="20230508 23:11:40.299" endtime="20230508 23:11:45.760"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230508 23:11:45.761" endtime="20230508 23:11:45.898"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://button[normalize-space()='Accept all']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 23:11:45.898" endtime="20230508 23:11:45.928"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://button[normalize-space()='Accept all']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230508 23:11:45.929" level="INFO">Clicking element 'xpath://button[normalize-space()='Accept all']'.</msg>
+<status status="PASS" starttime="20230508 23:11:45.928" endtime="20230508 23:11:45.998"/>
+</kw>
+<kw name="Wait Until Element Is Not Visible" library="SeleniumLibrary">
+<arg>xpath://div[@class='_1DK52RbaamLOWw5UPaht_S _3Ig_EsWWVLquWs2yBBQjec _1acwN_tUhJ8w-n7oCp-Aw3']</arg>
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<status status="PASS" starttime="20230508 23:11:45.998" endtime="20230508 23:11:46.009"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://a[normalize-space()='Log In']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 23:11:46.009" endtime="20230508 23:11:46.035"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://a[normalize-space()='Log In']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230508 23:11:46.036" level="INFO">Clicking element 'xpath://a[normalize-space()='Log In']'.</msg>
+<status status="PASS" starttime="20230508 23:11:46.035" endtime="20230508 23:11:46.167"/>
+</kw>
+<kw name="Select Frame" library="SeleniumLibrary">
+<arg>xpath://iframe[@class='_25r3t_lrPF3M6zD2YkWvZU']</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<msg timestamp="20230508 23:11:46.168" level="INFO">Selecting frame 'xpath://iframe[@class='_25r3t_lrPF3M6zD2YkWvZU']'.</msg>
+<status status="PASS" starttime="20230508 23:11:46.167" endtime="20230508 23:11:46.693"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://h1[normalize-space()='Log In']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 23:11:46.693" endtime="20230508 23:11:46.702"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://input[@id='loginUsername']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 23:11:46.703" endtime="20230508 23:11:46.713"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://input[@id='loginPassword']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 23:11:46.713" endtime="20230508 23:11:46.722"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://input[@id='loginUsername']</arg>
+<arg>DisciplineTotal7010</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230508 23:11:46.722" level="INFO">Typing text 'DisciplineTotal7010' into text field 'xpath://input[@id='loginUsername']'.</msg>
+<status status="PASS" starttime="20230508 23:11:46.722" endtime="20230508 23:11:46.786"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://input[@id='loginPassword']</arg>
+<arg>147test147</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230508 23:11:46.787" level="INFO">Typing text '147test147' into text field 'xpath://input[@id='loginPassword']'.</msg>
+<status status="PASS" starttime="20230508 23:11:46.786" endtime="20230508 23:11:46.846"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://button[normalize-space()='Log In']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230508 23:11:46.847" level="INFO">Clicking element 'xpath://button[normalize-space()='Log In']'.</msg>
+<status status="PASS" starttime="20230508 23:11:46.847" endtime="20230508 23:11:46.937"/>
+</kw>
+<kw name="Unselect Frame" library="SeleniumLibrary">
+<doc>Sets the main frame as the current frame.</doc>
+<status status="PASS" starttime="20230508 23:11:46.937" endtime="20230508 23:11:46.939"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://div[contains(@class,'efdkOLo3oigH_95whTYCp _1zyV-XmoYeSNGWjfZiXbPc')]//img[contains(@alt,'User avatar')]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 23:11:46.939" endtime="20230508 23:11:49.958"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://div[@class='_1zPvgKHteTOub9dKkvrOl4']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 23:11:49.958" endtime="20230508 23:11:50.193"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://a[@id='focus-Popular']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 23:11:50.193" endtime="20230508 23:11:50.223"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://a[@id='focus-Popular']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230508 23:11:50.224" level="INFO">Clicking element 'xpath://a[@id='focus-Popular']'.</msg>
+<status status="PASS" starttime="20230508 23:11:50.223" endtime="20230508 23:11:50.318"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://div[contains(@class,'_2pUO1Sfe7WlIHvq6goN3Pz')]//a[3]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 23:11:50.319" endtime="20230508 23:11:50.544"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://div[contains(@class,'_2pUO1Sfe7WlIHvq6goN3Pz')]//a[3]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230508 23:11:50.545" level="INFO">Clicking element 'xpath://div[contains(@class,'_2pUO1Sfe7WlIHvq6goN3Pz')]//a[3]'.</msg>
+<status status="PASS" starttime="20230508 23:11:50.545" endtime="20230508 23:11:50.603"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://h3[normalize-space()='Best. Country. In the world.']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 23:11:50.603" endtime="20230508 23:11:52.431"/>
+</kw>
+<kw name="Wait Until Element Is Not Visible" library="SeleniumLibrary">
+<arg>xpath://div[@class='_1DK52RbaamLOWw5UPaht_S _3Ig_EsWWVLquWs2yBBQjec _1acwN_tUhJ8w-n7oCp-Aw3']</arg>
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<status status="PASS" starttime="20230508 23:11:52.432" endtime="20230508 23:11:52.439"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://h3[normalize-space()='Best. Country. In the world.']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230508 23:11:52.439" level="INFO">Clicking element 'xpath://h3[normalize-space()='Best. Country. In the world.']'.</msg>
+<status status="PASS" starttime="20230508 23:11:52.439" endtime="20230508 23:11:52.587"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://div[contains(@class,'_2SdHzo12ISmrC8H86TgSCp _29WrubtjAcKqzJSPdQqQ4h')]//h1[@class='_eYtD2XCVieq6emjKBH3m'][normalize-space()='Best. Country. In the world.']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 23:11:52.588" endtime="20230508 23:11:52.737"/>
+</kw>
+<kw name="Location Should Be" library="SeleniumLibrary">
+<arg>https://www.reddit.com/r/WhitePeopleTwitter/comments/13b5ka2/best_country_in_the_world/</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<msg timestamp="20230508 23:11:52.819" level="INFO">Current location is 'https://www.reddit.com/r/WhitePeopleTwitter/comments/13b5ka2/best_country_in_the_world/'.</msg>
+<status status="PASS" starttime="20230508 23:11:52.737" endtime="20230508 23:11:52.819"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://button[@class='_3KTYozwt91D81Yub-OQ4S3']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 23:11:52.819" endtime="20230508 23:11:52.840"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://button[@class='_3KTYozwt91D81Yub-OQ4S3']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230508 23:11:52.840" level="INFO">Clicking element 'xpath://button[@class='_3KTYozwt91D81Yub-OQ4S3']'.</msg>
+<status status="PASS" starttime="20230508 23:11:52.840" endtime="20230508 23:11:52.912"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://i[@aria-label='Follow post to stay updated']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 23:11:52.912" endtime="20230508 23:11:52.922"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230508 23:11:53.138" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230508 23:11:52.923" endtime="20230508 23:11:53.138"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230508 23:11:53.138" endtime="20230508 23:11:55.306"/>
+</kw>
+<doc>Tests Subscribe to Post Notifications functionality after login</doc>
+<status status="PASS" starttime="20230508 23:11:40.299" endtime="20230508 23:11:55.307"/>
+</test>
+<test id="s1-t8" name="TC_007-008: After_Login_Test - Subscribe to Subreddit" line="225">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230508 23:11:55.308" level="INFO">Opening browser 'chrome' to base url 'https://www.reddit.com/'.</msg>
+<status status="PASS" starttime="20230508 23:11:55.308" endtime="20230508 23:12:00.758"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230508 23:12:00.758" endtime="20230508 23:12:00.919"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://button[normalize-space()='Accept all']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 23:12:00.919" endtime="20230508 23:12:00.965"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://button[normalize-space()='Accept all']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230508 23:12:00.966" level="INFO">Clicking element 'xpath://button[normalize-space()='Accept all']'.</msg>
+<status status="PASS" starttime="20230508 23:12:00.966" endtime="20230508 23:12:01.042"/>
+</kw>
+<kw name="Wait Until Element Is Not Visible" library="SeleniumLibrary">
+<arg>xpath://div[@class='_1DK52RbaamLOWw5UPaht_S _3Ig_EsWWVLquWs2yBBQjec _1acwN_tUhJ8w-n7oCp-Aw3']</arg>
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<status status="PASS" starttime="20230508 23:12:01.043" endtime="20230508 23:12:01.127"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://a[normalize-space()='Log In']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 23:12:01.127" endtime="20230508 23:12:01.137"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://a[normalize-space()='Log In']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230508 23:12:01.137" level="INFO">Clicking element 'xpath://a[normalize-space()='Log In']'.</msg>
+<status status="PASS" starttime="20230508 23:12:01.137" endtime="20230508 23:12:01.215"/>
+</kw>
+<kw name="Select Frame" library="SeleniumLibrary">
+<arg>xpath://iframe[@class='_25r3t_lrPF3M6zD2YkWvZU']</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<msg timestamp="20230508 23:12:01.215" level="INFO">Selecting frame 'xpath://iframe[@class='_25r3t_lrPF3M6zD2YkWvZU']'.</msg>
+<status status="PASS" starttime="20230508 23:12:01.215" endtime="20230508 23:12:01.749"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://h1[normalize-space()='Log In']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 23:12:01.749" endtime="20230508 23:12:01.757"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://input[@id='loginUsername']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 23:12:01.757" endtime="20230508 23:12:01.768"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://input[@id='loginPassword']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 23:12:01.768" endtime="20230508 23:12:01.778"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://input[@id='loginUsername']</arg>
+<arg>DisciplineTotal7010</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230508 23:12:01.778" level="INFO">Typing text 'DisciplineTotal7010' into text field 'xpath://input[@id='loginUsername']'.</msg>
+<status status="PASS" starttime="20230508 23:12:01.778" endtime="20230508 23:12:01.839"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://input[@id='loginPassword']</arg>
+<arg>147test147</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230508 23:12:01.840" level="INFO">Typing text '147test147' into text field 'xpath://input[@id='loginPassword']'.</msg>
+<status status="PASS" starttime="20230508 23:12:01.840" endtime="20230508 23:12:01.904"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://button[normalize-space()='Log In']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230508 23:12:01.904" level="INFO">Clicking element 'xpath://button[normalize-space()='Log In']'.</msg>
+<status status="PASS" starttime="20230508 23:12:01.904" endtime="20230508 23:12:01.973"/>
+</kw>
+<kw name="Unselect Frame" library="SeleniumLibrary">
+<doc>Sets the main frame as the current frame.</doc>
+<status status="PASS" starttime="20230508 23:12:01.974" endtime="20230508 23:12:01.977"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://div[contains(@class,'efdkOLo3oigH_95whTYCp _1zyV-XmoYeSNGWjfZiXbPc')]//img[contains(@alt,'User avatar')]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 23:12:01.977" endtime="20230508 23:12:05.403"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://div[@class='_1zPvgKHteTOub9dKkvrOl4']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 23:12:05.403" endtime="20230508 23:12:05.455"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://a[@id='focus-Popular']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 23:12:05.455" endtime="20230508 23:12:05.486"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://a[@id='focus-Popular']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230508 23:12:05.487" level="INFO">Clicking element 'xpath://a[@id='focus-Popular']'.</msg>
+<status status="PASS" starttime="20230508 23:12:05.487" endtime="20230508 23:12:05.582"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://div[contains(@class,'_2pUO1Sfe7WlIHvq6goN3Pz')]//a[3]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 23:12:05.582" endtime="20230508 23:12:05.824"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://div[contains(@class,'_2pUO1Sfe7WlIHvq6goN3Pz')]//a[3]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230508 23:12:05.825" level="INFO">Clicking element 'xpath://div[contains(@class,'_2pUO1Sfe7WlIHvq6goN3Pz')]//a[3]'.</msg>
+<status status="PASS" starttime="20230508 23:12:05.825" endtime="20230508 23:12:05.882"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://h3[normalize-space()='Best. Country. In the world.']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 23:12:05.883" endtime="20230508 23:12:07.294"/>
+</kw>
+<kw name="Wait Until Element Is Not Visible" library="SeleniumLibrary">
+<arg>xpath://div[@class='_1DK52RbaamLOWw5UPaht_S _3Ig_EsWWVLquWs2yBBQjec _1acwN_tUhJ8w-n7oCp-Aw3']</arg>
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<status status="PASS" starttime="20230508 23:12:07.294" endtime="20230508 23:12:07.320"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://h3[normalize-space()='Best. Country. In the world.']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230508 23:12:07.321" level="INFO">Clicking element 'xpath://h3[normalize-space()='Best. Country. In the world.']'.</msg>
+<status status="PASS" starttime="20230508 23:12:07.320" endtime="20230508 23:12:07.466"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://div[contains(@class,'_2SdHzo12ISmrC8H86TgSCp _29WrubtjAcKqzJSPdQqQ4h')]//h1[@class='_eYtD2XCVieq6emjKBH3m'][normalize-space()='Best. Country. In the world.']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 23:12:07.467" endtime="20230508 23:12:07.589"/>
+</kw>
+<kw name="Location Should Be" library="SeleniumLibrary">
+<arg>https://www.reddit.com/r/WhitePeopleTwitter/comments/13b5ka2/best_country_in_the_world/</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<msg timestamp="20230508 23:12:07.736" level="INFO">Current location is 'https://www.reddit.com/r/WhitePeopleTwitter/comments/13b5ka2/best_country_in_the_world/'.</msg>
+<status status="PASS" starttime="20230508 23:12:07.589" endtime="20230508 23:12:07.736"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://span[@title='r/WhitePeopleTwitter']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 23:12:07.737" endtime="20230508 23:12:08.741"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://span[@title='r/WhitePeopleTwitter']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230508 23:12:08.742" level="INFO">Clicking element 'xpath://span[@title='r/WhitePeopleTwitter']'.</msg>
+<status status="PASS" starttime="20230508 23:12:08.741" endtime="20230508 23:12:08.990"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://h2[@class='_33aRtz9JtW0dIrBNKFAl0y']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 23:12:08.990" endtime="20230508 23:12:09.005"/>
+</kw>
+<kw name="Location Should Be" library="SeleniumLibrary">
+<arg>https://www.reddit.com/r/WhitePeopleTwitter/</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<msg timestamp="20230508 23:12:09.011" level="INFO">Current location is 'https://www.reddit.com/r/WhitePeopleTwitter/'.</msg>
+<status status="PASS" starttime="20230508 23:12:09.005" endtime="20230508 23:12:09.011"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://button[@class='_1LHxa-yaHJwrPK8kuyv_Y4 _2iuoyPiKHN3kfOoeIQalDT _10BQ7pjWbeYP63SAPNS8Ts HNozj_dKjQZ59ZsfEegz8 _34mIRHpFtnJ0Sk97S2Z3D9']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 23:12:09.011" endtime="20230508 23:12:09.020"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://button[@class='_1LHxa-yaHJwrPK8kuyv_Y4 _2iuoyPiKHN3kfOoeIQalDT _10BQ7pjWbeYP63SAPNS8Ts HNozj_dKjQZ59ZsfEegz8 _34mIRHpFtnJ0Sk97S2Z3D9']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230508 23:12:09.021" level="INFO">Clicking element 'xpath://button[@class='_1LHxa-yaHJwrPK8kuyv_Y4 _2iuoyPiKHN3kfOoeIQalDT _10BQ7pjWbeYP63SAPNS8Ts HNozj_dKjQZ59ZsfEegz8 _34mIRHpFtnJ0Sk97S2Z3D9']'.</msg>
+<status status="PASS" starttime="20230508 23:12:09.020" endtime="20230508 23:12:09.065"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://button[@class='_1LHxa-yaHJwrPK8kuyv_Y4 _2iuoyPiKHN3kfOoeIQalDT _2tU8R9NTqhvBrhoNAXWWcP HNozj_dKjQZ59ZsfEegz8 _34mIRHpFtnJ0Sk97S2Z3D9']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 23:12:09.065" endtime="20230508 23:12:09.074"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230508 23:12:09.308" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230508 23:12:09.074" endtime="20230508 23:12:09.308"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230508 23:12:09.308" endtime="20230508 23:12:11.488"/>
+</kw>
+<doc>Tests Subscribe to Subreddit functionality after login</doc>
+<status status="PASS" starttime="20230508 23:11:55.308" endtime="20230508 23:12:11.488"/>
+</test>
+<status status="PASS" starttime="20230508 23:10:14.719" endtime="20230508 23:12:11.489"/>
+</suite>
+<statistics>
+<total>
+<stat pass="8" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="8" fail="0" skip="0" id="s1" name="After Login Test">After Login Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

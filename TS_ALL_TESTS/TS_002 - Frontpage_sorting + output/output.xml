@@ -1,0 +1,634 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.8.10 on win32)" generated="20230508 18:18:36.207" rpa="false" schemaversion="3">
+<suite id="s1" name="Frontpage sorting" source="D:\Downloads\AP4TS - !!!!!NEMAZ!!!!!!\test-done\My_tests\TS_002 - Frontpage_sorting + output\Frontpage_sorting.robot">
+<test id="s1-t1" name="TC_002-001: Country Picker Test" line="9">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230508 18:18:36.353" level="INFO">Opening browser 'chrome' to base url 'https://www.reddit.com/'.</msg>
+<status status="PASS" starttime="20230508 18:18:36.352" endtime="20230508 18:18:41.581"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230508 18:18:41.582" endtime="20230508 18:18:41.706"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://button[normalize-space()='Accept all']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 18:18:41.707" endtime="20230508 18:18:41.743"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://button[normalize-space()='Accept all']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230508 18:18:41.744" level="INFO">Clicking element 'xpath://button[normalize-space()='Accept all']'.</msg>
+<status status="PASS" starttime="20230508 18:18:41.744" endtime="20230508 18:18:41.815"/>
+</kw>
+<kw name="Wait Until Element Is Not Visible" library="SeleniumLibrary">
+<arg>xpath://div[@class='_1DK52RbaamLOWw5UPaht_S _3Ig_EsWWVLquWs2yBBQjec _1acwN_tUhJ8w-n7oCp-Aw3']</arg>
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<status status="PASS" starttime="20230508 18:18:41.815" endtime="20230508 18:18:41.825"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://button[@id='CountrySort--CountrySortPicker']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 18:18:41.826" endtime="20230508 18:18:41.834"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://button[@id='CountrySort--CountrySortPicker']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230508 18:18:41.835" level="INFO">Clicking element 'xpath://button[@id='CountrySort--CountrySortPicker']'.</msg>
+<status status="PASS" starttime="20230508 18:18:41.834" endtime="20230508 18:18:41.897"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>document.evaluate("//span[normalize-space()='United States']", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.click()</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20230508 18:18:41.898" level="INFO">Executing JavaScript:
+document.evaluate("//span[normalize-space()='United States']", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.click()
+Without any arguments.</msg>
+<status status="PASS" starttime="20230508 18:18:41.897" endtime="20230508 18:18:41.987"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://button[@id='CountrySort--CountrySortPicker']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 18:18:41.987" endtime="20230508 18:18:42.455"/>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>xpath://button[@id='CountrySort--CountrySortPicker']</arg>
+<arg>United States</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20230508 18:18:42.457" level="INFO">Verifying element 'xpath://button[@id='CountrySort--CountrySortPicker']' contains exact text 'United States'.</msg>
+<status status="PASS" starttime="20230508 18:18:42.456" endtime="20230508 18:18:42.475"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230508 18:18:42.701" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230508 18:18:42.475" endtime="20230508 18:18:42.701"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230508 18:18:42.701" endtime="20230508 18:18:44.855"/>
+</kw>
+<doc>Tests the functionality of the country picker button</doc>
+<status status="PASS" starttime="20230508 18:18:36.352" endtime="20230508 18:18:44.856"/>
+</test>
+<test id="s1-t2" name="TC_002-002: Top Sort Test" line="24">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230508 18:18:44.858" level="INFO">Opening browser 'chrome' to base url 'https://www.reddit.com/'.</msg>
+<status status="PASS" starttime="20230508 18:18:44.858" endtime="20230508 18:18:50.174"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230508 18:18:50.175" endtime="20230508 18:18:50.306"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://button[normalize-space()='Accept all']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 18:18:50.307" endtime="20230508 18:18:50.362"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://button[normalize-space()='Accept all']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230508 18:18:50.363" level="INFO">Clicking element 'xpath://button[normalize-space()='Accept all']'.</msg>
+<status status="PASS" starttime="20230508 18:18:50.362" endtime="20230508 18:18:50.414"/>
+</kw>
+<kw name="Wait Until Element Is Not Visible" library="SeleniumLibrary">
+<arg>xpath://div[@class='_1DK52RbaamLOWw5UPaht_S _3Ig_EsWWVLquWs2yBBQjec _1acwN_tUhJ8w-n7oCp-Aw3']</arg>
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<status status="PASS" starttime="20230508 18:18:50.414" endtime="20230508 18:18:50.424"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://div[contains(@class,'_2pUO1Sfe7WlIHvq6goN3Pz')]//a[3]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230508 18:18:50.424" level="INFO">Clicking element 'xpath://div[contains(@class,'_2pUO1Sfe7WlIHvq6goN3Pz')]//a[3]'.</msg>
+<status status="PASS" starttime="20230508 18:18:50.424" endtime="20230508 18:18:50.628"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://h3[normalize-space()='Best. Country. In the world.']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 18:18:50.628" endtime="20230508 18:18:51.500"/>
+</kw>
+<kw name="Location Should Be" library="SeleniumLibrary">
+<arg>https://www.reddit.com/top/</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<msg timestamp="20230508 18:18:51.504" level="INFO">Current location is 'https://www.reddit.com/top/'.</msg>
+<status status="PASS" starttime="20230508 18:18:51.500" endtime="20230508 18:18:51.504"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230508 18:18:51.732" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230508 18:18:51.504" endtime="20230508 18:18:51.733"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230508 18:18:51.733" endtime="20230508 18:18:53.879"/>
+</kw>
+<doc>Tests the functionality of the top sort button</doc>
+<status status="PASS" starttime="20230508 18:18:44.857" endtime="20230508 18:18:53.879"/>
+</test>
+<test id="s1-t3" name="TC-002-003: Top Sort All test" line="37">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230508 18:18:53.882" level="INFO">Opening browser 'chrome' to base url 'https://www.reddit.com/'.</msg>
+<status status="PASS" starttime="20230508 18:18:53.881" endtime="20230508 18:18:59.370"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230508 18:18:59.371" endtime="20230508 18:18:59.496"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://button[normalize-space()='Accept all']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 18:18:59.496" endtime="20230508 18:18:59.545"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://button[normalize-space()='Accept all']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230508 18:18:59.546" level="INFO">Clicking element 'xpath://button[normalize-space()='Accept all']'.</msg>
+<status status="PASS" starttime="20230508 18:18:59.545" endtime="20230508 18:18:59.607"/>
+</kw>
+<kw name="Wait Until Element Is Not Visible" library="SeleniumLibrary">
+<arg>xpath://div[@class='_1DK52RbaamLOWw5UPaht_S _3Ig_EsWWVLquWs2yBBQjec _1acwN_tUhJ8w-n7oCp-Aw3']</arg>
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<status status="PASS" starttime="20230508 18:18:59.607" endtime="20230508 18:18:59.618"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://div[contains(@class,'_2pUO1Sfe7WlIHvq6goN3Pz')]//a[3]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230508 18:18:59.618" level="INFO">Clicking element 'xpath://div[contains(@class,'_2pUO1Sfe7WlIHvq6goN3Pz')]//a[3]'.</msg>
+<status status="PASS" starttime="20230508 18:18:59.618" endtime="20230508 18:18:59.825"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://button[@id='TimeSort--SortPicker']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230508 18:18:59.826" level="INFO">Clicking element 'xpath://button[@id='TimeSort--SortPicker']'.</msg>
+<status status="PASS" starttime="20230508 18:18:59.825" endtime="20230508 18:18:59.927"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>document.evaluate("//span[normalize-space()='All Time']", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.click()</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20230508 18:18:59.928" level="INFO">Executing JavaScript:
+document.evaluate("//span[normalize-space()='All Time']", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.click()
+Without any arguments.</msg>
+<status status="PASS" starttime="20230508 18:18:59.927" endtime="20230508 18:19:00.010"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://h3[contains(text(),'I’ve found a few funny memories during lockdown. T')]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 18:19:00.010" endtime="20230508 18:19:02.404"/>
+</kw>
+<kw name="Location Should Be" library="SeleniumLibrary">
+<arg>https://www.reddit.com/top/?t=all</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<msg timestamp="20230508 18:19:02.471" level="INFO">Current location is 'https://www.reddit.com/top/?t=all'.</msg>
+<status status="PASS" starttime="20230508 18:19:02.404" endtime="20230508 18:19:02.471"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230508 18:19:02.690" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230508 18:19:02.471" endtime="20230508 18:19:02.690"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230508 18:19:02.691" endtime="20230508 18:19:04.856"/>
+</kw>
+<doc>Tests the functionality of the top sort button</doc>
+<status status="PASS" starttime="20230508 18:18:53.881" endtime="20230508 18:19:04.856"/>
+</test>
+<test id="s1-t4" name="TC-002-004: New Sort test" line="52">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230508 18:19:04.859" level="INFO">Opening browser 'chrome' to base url 'https://www.reddit.com/'.</msg>
+<status status="PASS" starttime="20230508 18:19:04.857" endtime="20230508 18:19:09.919"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230508 18:19:09.920" endtime="20230508 18:19:10.052"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://button[normalize-space()='Accept all']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 18:19:10.053" endtime="20230508 18:19:10.104"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://button[normalize-space()='Accept all']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230508 18:19:10.104" level="INFO">Clicking element 'xpath://button[normalize-space()='Accept all']'.</msg>
+<status status="PASS" starttime="20230508 18:19:10.104" endtime="20230508 18:19:10.166"/>
+</kw>
+<kw name="Wait Until Element Is Not Visible" library="SeleniumLibrary">
+<arg>xpath://div[@class='_1DK52RbaamLOWw5UPaht_S _3Ig_EsWWVLquWs2yBBQjec _1acwN_tUhJ8w-n7oCp-Aw3']</arg>
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<status status="PASS" starttime="20230508 18:19:10.167" endtime="20230508 18:19:10.177"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://div[contains(@class,'_2pUO1Sfe7WlIHvq6goN3Pz')]//a[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230508 18:19:10.178" level="INFO">Clicking element 'xpath://div[contains(@class,'_2pUO1Sfe7WlIHvq6goN3Pz')]//a[2]'.</msg>
+<status status="PASS" starttime="20230508 18:19:10.178" endtime="20230508 18:19:10.395"/>
+</kw>
+<kw name="Location Should Be" library="SeleniumLibrary">
+<arg>https://www.reddit.com/new/</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<msg timestamp="20230508 18:19:10.404" level="INFO">Current location is 'https://www.reddit.com/new/'.</msg>
+<status status="PASS" starttime="20230508 18:19:10.395" endtime="20230508 18:19:10.404"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230508 18:19:10.586" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230508 18:19:10.404" endtime="20230508 18:19:10.586"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230508 18:19:10.586" endtime="20230508 18:19:12.756"/>
+</kw>
+<doc>Tests the functionality of the new sort button</doc>
+<status status="PASS" starttime="20230508 18:19:04.857" endtime="20230508 18:19:12.757"/>
+</test>
+<test id="s1-t5" name="TC-002-005: Hot Sort test" line="64">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230508 18:19:12.758" level="INFO">Opening browser 'chrome' to base url 'https://www.reddit.com/'.</msg>
+<status status="PASS" starttime="20230508 18:19:12.758" endtime="20230508 18:19:19.174"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230508 18:19:19.174" endtime="20230508 18:19:19.314"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://button[normalize-space()='Accept all']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 18:19:19.315" endtime="20230508 18:19:19.378"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://button[normalize-space()='Accept all']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230508 18:19:19.379" level="INFO">Clicking element 'xpath://button[normalize-space()='Accept all']'.</msg>
+<status status="PASS" starttime="20230508 18:19:19.378" endtime="20230508 18:19:19.436"/>
+</kw>
+<kw name="Wait Until Element Is Not Visible" library="SeleniumLibrary">
+<arg>xpath://div[@class='_1DK52RbaamLOWw5UPaht_S _3Ig_EsWWVLquWs2yBBQjec _1acwN_tUhJ8w-n7oCp-Aw3']</arg>
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<status status="PASS" starttime="20230508 18:19:19.436" endtime="20230508 18:19:19.446"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://div[contains(@class,'_2pUO1Sfe7WlIHvq6goN3Pz')]//a[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230508 18:19:19.447" level="INFO">Clicking element 'xpath://div[contains(@class,'_2pUO1Sfe7WlIHvq6goN3Pz')]//a[2]'.</msg>
+<status status="PASS" starttime="20230508 18:19:19.446" endtime="20230508 18:19:19.668"/>
+</kw>
+<kw name="Location Should Be" library="SeleniumLibrary">
+<arg>https://www.reddit.com/new/</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<msg timestamp="20230508 18:19:19.674" level="INFO">Current location is 'https://www.reddit.com/new/'.</msg>
+<status status="PASS" starttime="20230508 18:19:19.668" endtime="20230508 18:19:19.674"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://div[contains(@class,'_2pUO1Sfe7WlIHvq6goN3Pz')]//a[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230508 18:19:19.675" level="INFO">Clicking element 'xpath://div[contains(@class,'_2pUO1Sfe7WlIHvq6goN3Pz')]//a[1]'.</msg>
+<status status="PASS" starttime="20230508 18:19:19.674" endtime="20230508 18:19:19.907"/>
+</kw>
+<kw name="Location Should Be" library="SeleniumLibrary">
+<arg>https://www.reddit.com/hot/</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<msg timestamp="20230508 18:19:19.941" level="INFO">Current location is 'https://www.reddit.com/hot/'.</msg>
+<status status="PASS" starttime="20230508 18:19:19.908" endtime="20230508 18:19:19.941"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://h3[contains(text(),'Našli jsme v lese, je možné, že to je z uranových ')]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 18:19:19.941" endtime="20230508 18:19:19.953"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230508 18:19:20.241" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230508 18:19:19.955" endtime="20230508 18:19:20.241"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230508 18:19:20.242" endtime="20230508 18:19:22.388"/>
+</kw>
+<doc>Tests the functionality of the hot sort button</doc>
+<status status="PASS" starttime="20230508 18:19:12.758" endtime="20230508 18:19:22.388"/>
+</test>
+<test id="s1-t6" name="TC-002-006: Rising Sort test" line="79">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230508 18:19:22.390" level="INFO">Opening browser 'chrome' to base url 'https://www.reddit.com/'.</msg>
+<status status="PASS" starttime="20230508 18:19:22.390" endtime="20230508 18:19:27.871"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230508 18:19:27.872" endtime="20230508 18:19:28.036"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://button[normalize-space()='Accept all']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 18:19:28.036" endtime="20230508 18:19:28.141"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://button[normalize-space()='Accept all']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230508 18:19:28.141" level="INFO">Clicking element 'xpath://button[normalize-space()='Accept all']'.</msg>
+<status status="PASS" starttime="20230508 18:19:28.141" endtime="20230508 18:19:28.216"/>
+</kw>
+<kw name="Wait Until Element Is Not Visible" library="SeleniumLibrary">
+<arg>xpath://div[@class='_1DK52RbaamLOWw5UPaht_S _3Ig_EsWWVLquWs2yBBQjec _1acwN_tUhJ8w-n7oCp-Aw3']</arg>
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<status status="PASS" starttime="20230508 18:19:28.216" endtime="20230508 18:19:28.228"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://button[@id='ListingSort--Overflow']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 18:19:28.228" endtime="20230508 18:19:28.238"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://button[@id='ListingSort--Overflow']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230508 18:19:28.239" level="INFO">Clicking element 'xpath://button[@id='ListingSort--Overflow']'.</msg>
+<status status="PASS" starttime="20230508 18:19:28.239" endtime="20230508 18:19:28.319"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://div[contains(@role,'menu')]//span[contains(@class,'_2-cXnP74241WI7fpcpfPmg')][normalize-space()='Rising']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230508 18:19:28.320" level="INFO">Clicking element 'xpath://div[contains(@role,'menu')]//span[contains(@class,'_2-cXnP74241WI7fpcpfPmg')][normalize-space()='Rising']'.</msg>
+<status status="PASS" starttime="20230508 18:19:28.320" endtime="20230508 18:19:28.556"/>
+</kw>
+<kw name="Location Should Be" library="SeleniumLibrary">
+<arg>https://www.reddit.com/rising/</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<msg timestamp="20230508 18:19:28.572" level="INFO">Current location is 'https://www.reddit.com/rising/'.</msg>
+<status status="PASS" starttime="20230508 18:19:28.557" endtime="20230508 18:19:28.572"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://h3[normalize-space()='Hanging Out With Me, Myself, and I']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 18:19:28.572" endtime="20230508 18:19:29.659"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230508 18:19:29.885" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230508 18:19:29.660" endtime="20230508 18:19:29.885"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230508 18:19:29.886" endtime="20230508 18:19:32.048"/>
+</kw>
+<doc>Tests the functionality of the rising sort button</doc>
+<status status="PASS" starttime="20230508 18:19:22.389" endtime="20230508 18:19:32.048"/>
+</test>
+<test id="s1-t7" name="TC-002-007: Classic layout test" line="94">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230508 18:19:32.050" level="INFO">Opening browser 'chrome' to base url 'https://www.reddit.com/'.</msg>
+<status status="PASS" starttime="20230508 18:19:32.050" endtime="20230508 18:19:37.522"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230508 18:19:37.522" endtime="20230508 18:19:37.669"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://button[normalize-space()='Accept all']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 18:19:37.670" endtime="20230508 18:19:37.702"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://button[normalize-space()='Accept all']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230508 18:19:37.703" level="INFO">Clicking element 'xpath://button[normalize-space()='Accept all']'.</msg>
+<status status="PASS" starttime="20230508 18:19:37.702" endtime="20230508 18:19:37.768"/>
+</kw>
+<kw name="Wait Until Element Is Not Visible" library="SeleniumLibrary">
+<arg>xpath://div[@class='_1DK52RbaamLOWw5UPaht_S _3Ig_EsWWVLquWs2yBBQjec _1acwN_tUhJ8w-n7oCp-Aw3']</arg>
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<status status="PASS" starttime="20230508 18:19:37.768" endtime="20230508 18:19:37.779"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://button[@id='LayoutSwitch--picker']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 18:19:37.779" endtime="20230508 18:19:37.802"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://button[@id='LayoutSwitch--picker']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230508 18:19:37.802" level="INFO">Clicking element 'xpath://button[@id='LayoutSwitch--picker']'.</msg>
+<status status="PASS" starttime="20230508 18:19:37.802" endtime="20230508 18:19:37.881"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://body/div/div[contains(@role,'menu')]/button[2]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 18:19:37.881" endtime="20230508 18:19:37.892"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://body/div/div[contains(@role,'menu')]/button[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230508 18:19:37.893" level="INFO">Clicking element 'xpath://body/div/div[contains(@role,'menu')]/button[2]'.</msg>
+<status status="PASS" starttime="20230508 18:19:37.893" endtime="20230508 18:19:37.993"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://div[@class='rpBJOHq2PR60pnwJlUyP0']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 18:19:37.993" endtime="20230508 18:19:38.006"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230508 18:19:38.425" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230508 18:19:38.006" endtime="20230508 18:19:38.425"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230508 18:19:38.425" endtime="20230508 18:19:40.596"/>
+</kw>
+<doc>Tests the functionality of the Classic layout button</doc>
+<status status="PASS" starttime="20230508 18:19:32.050" endtime="20230508 18:19:40.596"/>
+</test>
+<test id="s1-t8" name="TC-002-007: Comapact layout test" line="109">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230508 18:19:40.598" level="INFO">Opening browser 'chrome' to base url 'https://www.reddit.com/'.</msg>
+<status status="PASS" starttime="20230508 18:19:40.598" endtime="20230508 18:19:46.697"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230508 18:19:46.698" endtime="20230508 18:19:46.833"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://button[normalize-space()='Accept all']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 18:19:46.833" endtime="20230508 18:19:46.915"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://button[normalize-space()='Accept all']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230508 18:19:46.917" level="INFO">Clicking element 'xpath://button[normalize-space()='Accept all']'.</msg>
+<status status="PASS" starttime="20230508 18:19:46.916" endtime="20230508 18:19:46.996"/>
+</kw>
+<kw name="Wait Until Element Is Not Visible" library="SeleniumLibrary">
+<arg>xpath://div[@class='_1DK52RbaamLOWw5UPaht_S _3Ig_EsWWVLquWs2yBBQjec _1acwN_tUhJ8w-n7oCp-Aw3']</arg>
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<status status="PASS" starttime="20230508 18:19:46.997" endtime="20230508 18:19:47.022"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://button[@id='LayoutSwitch--picker']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 18:19:47.023" endtime="20230508 18:19:47.033"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://button[@id='LayoutSwitch--picker']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230508 18:19:47.033" level="INFO">Clicking element 'xpath://button[@id='LayoutSwitch--picker']'.</msg>
+<status status="PASS" starttime="20230508 18:19:47.033" endtime="20230508 18:19:47.116"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://body/div/div[contains(@role,'menu')]/button[3]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 18:19:47.116" endtime="20230508 18:19:47.141"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://body/div/div[contains(@role,'menu')]/button[3]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230508 18:19:47.142" level="INFO">Clicking element 'xpath://body/div/div[contains(@role,'menu')]/button[3]'.</msg>
+<status status="PASS" starttime="20230508 18:19:47.142" endtime="20230508 18:19:47.242"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://div[contains(@class,'rpBJOHq2PR60pnwJlUyP0')]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 18:19:47.243" endtime="20230508 18:19:47.254"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230508 18:19:47.683" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230508 18:19:47.255" endtime="20230508 18:19:47.685"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230508 18:19:47.685" endtime="20230508 18:19:49.849"/>
+</kw>
+<doc>Tests the functionality of the Compact layout button</doc>
+<status status="PASS" starttime="20230508 18:19:40.597" endtime="20230508 18:19:49.849"/>
+</test>
+<test id="s1-t9" name="TC-002-009: Card layout test" line="124">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230508 18:19:49.851" level="INFO">Opening browser 'chrome' to base url 'https://www.reddit.com/'.</msg>
+<status status="PASS" starttime="20230508 18:19:49.851" endtime="20230508 18:19:55.382"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230508 18:19:55.383" endtime="20230508 18:19:55.523"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://button[normalize-space()='Accept all']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 18:19:55.523" endtime="20230508 18:19:55.586"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://button[normalize-space()='Accept all']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230508 18:19:55.586" level="INFO">Clicking element 'xpath://button[normalize-space()='Accept all']'.</msg>
+<status status="PASS" starttime="20230508 18:19:55.586" endtime="20230508 18:19:55.661"/>
+</kw>
+<kw name="Wait Until Element Is Not Visible" library="SeleniumLibrary">
+<arg>xpath://div[@class='_1DK52RbaamLOWw5UPaht_S _3Ig_EsWWVLquWs2yBBQjec _1acwN_tUhJ8w-n7oCp-Aw3']</arg>
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<status status="PASS" starttime="20230508 18:19:55.662" endtime="20230508 18:19:55.674"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://button[@id='LayoutSwitch--picker']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 18:19:55.674" endtime="20230508 18:19:55.684"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://button[@id='LayoutSwitch--picker']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230508 18:19:55.684" level="INFO">Clicking element 'xpath://button[@id='LayoutSwitch--picker']'.</msg>
+<status status="PASS" starttime="20230508 18:19:55.684" endtime="20230508 18:19:55.762"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://body/div/div[contains(@role,'menu')]/button[3]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 18:19:55.762" endtime="20230508 18:19:55.772"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://body/div/div[contains(@role,'menu')]/button[3]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230508 18:19:55.773" level="INFO">Clicking element 'xpath://body/div/div[contains(@role,'menu')]/button[3]'.</msg>
+<status status="PASS" starttime="20230508 18:19:55.772" endtime="20230508 18:19:55.881"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://div[contains(@class,'rpBJOHq2PR60pnwJlUyP0')]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 18:19:55.882" endtime="20230508 18:19:55.891"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://button[@id='LayoutSwitch--picker']//i[contains(@class,'icon icon-caret_down _1oxgVV3q47KbjEKqP5CHuM')]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 18:19:55.891" endtime="20230508 18:19:55.911"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://button[@id='LayoutSwitch--picker']//i[contains(@class,'icon icon-caret_down _1oxgVV3q47KbjEKqP5CHuM')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230508 18:19:55.912" level="INFO">Clicking element 'xpath://button[@id='LayoutSwitch--picker']//i[contains(@class,'icon icon-caret_down _1oxgVV3q47KbjEKqP5CHuM')]'.</msg>
+<status status="PASS" starttime="20230508 18:19:55.911" endtime="20230508 18:19:56.326"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://body/div/div[contains(@role,'menu')]/button[1]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 18:19:56.326" endtime="20230508 18:19:56.336"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://body/div/div[contains(@role,'menu')]/button[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230508 18:19:56.337" level="INFO">Clicking element 'xpath://body/div/div[contains(@role,'menu')]/button[1]'.</msg>
+<status status="PASS" starttime="20230508 18:19:56.337" endtime="20230508 18:19:56.658"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://div[contains(@class,'rpBJOHq2PR60pnwJlUyP0')]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230508 18:19:56.658" endtime="20230508 18:19:57.265"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230508 18:19:57.662" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-9.png"&gt;&lt;img src="selenium-screenshot-9.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230508 18:19:57.266" endtime="20230508 18:19:57.662"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230508 18:19:57.662" endtime="20230508 18:19:59.831"/>
+</kw>
+<doc>Tests the functionality of the card layout button</doc>
+<status status="PASS" starttime="20230508 18:19:49.850" endtime="20230508 18:19:59.832"/>
+</test>
+<status status="PASS" starttime="20230508 18:18:36.208" endtime="20230508 18:19:59.833"/>
+</suite>
+<statistics>
+<total>
+<stat pass="9" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="9" fail="0" skip="0" id="s1" name="Frontpage sorting">Frontpage sorting</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

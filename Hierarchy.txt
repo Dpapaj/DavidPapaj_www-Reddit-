@@ -1,0 +1,81 @@
+**Hierarchy:**
+
+TS_001 - Login_page_functions
+	TC_001-001: Login
+	TC_001-002: Forgot username
+	TC_001-003: Forgot password
+	TC_001-004: Sign up
+	TC_001-005: Sign up button
+      TC_001-006: Login
+      TC_001-007: Continue with Google Play
+      TC_001-008: Continue with iOS
+
+TS_002 - Frontpage_sorting
+	TC_002-001: Country Picker Test
+	TC_002-002: Top Sort Test
+	TC-002-003: Top Sort All test
+	TC-002-004: New Sort test
+	TC-002-005: Hot Sort test
+	TC-002-006: Rising Sort test
+	TC-002-007: Classic layout test
+	TC-002-008: Comapact layout test
+	TC-002-009: Card layout test
+
+TS_003 - FrontPage_Testing
+	TC_003-001: Get mobile app
+	TC_003-002: Search test
+	TC_003-003: Policy test
+	TC_003-004: Policy test
+	TC_003-005: Popular comunities test - askreddit
+	TC_003-006: Popular comunities test - NoStupidQuestions
+      TC_003-007: Popular comunities test - OutOfTheLoop
+	TC_003-008: ClickRedditLogoTest
+ 
+
+TS_004 - Dropdown_menu_Test
+	TC_004-001: Dropdown menu Test - iOS 
+	TC_004-002: Dropdown menu Test - Google play
+	TC_004-003: Dropdown menu Test - Rereddit
+	TC_004-004: Dropdown menu Test - blog
+	TC_004-005: Dropdown menu Test - press
+	TC_004-006: Dropdown menu Test - Privacy Policy
+	TC_004-007: Dropdown menu Test - Moderator Code of Conduct
+	TC_004-008: Dropdown menu Test - Login/Sign up button
+
+TS_005 - Topics_Test
+	TC_005-001: Topics_Test - Gaming - Minecraft
+	TC_005-002: Topics_Test - Sport - NFL
+	TC_005-003: Topics_Test - Business, Economics, and Finance - GameStop
+	TC_005-004: Topics_Test - Crypto - bitcoin
+	TC_005-005: Topics_Test - Television - The Bachelor
+	TC_005-006: Topics_Test - Celebrity - Henry Cavill
+	TC_005-007: Topics_Test - More options - Animals and Pets
+	TC_005-008: Topics_Test - Popular button
+
+TS_006 - Trending_Today_Test
+	TC_006-001: Trending_Today_Test - Taylor Swift
+	TC_006-002: Trending_Today_Test - Succession
+	TC_006-003: Trending_Today_Test - PremierLeague
+	TC_006-004: Trending_Today_Test - Chris Brown
+
+TS_007 - After_Login_Test
+	TC_007-001: After_Login_Test - Create a post
+	TC_007-002: After_Login_Test - Notifications
+	TC_007-003: After_Login_Test - Profile
+	TC_007-004: After_Login_Test - User Settings
+      TC_007-005: After_Login_Test - DarkMode
+      TC_007-006: After_Login_Test - Selecting Post
+      TC_007-007: After_Login_Test - Post Notifications
+      TC_007-008: After_Login_Test - Subscribe to Subreddit
+
+TS_008 - Misc_Test
+	TC_007-001: Sorting and Filtering Comments Functionality
+	TC_007-002: Embedding Links or Media in a Comment
+	TC_007-003: Blocking or Ignoring Users
+	TC_007-004: Changing Account Preferences
+      TC_007-005: Messaging Other Users
+      TC_007-006: Accessing User Profile and Activity
+      TC_007-007: Posting a Comment
+      TC_007-008: Upvoting and Downvoting Posts
+      TC_007-009: Managing Subscribed Subreddits
+      TC_007-010: Sharing a Post or Comment
